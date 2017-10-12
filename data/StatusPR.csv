@@ -132,3 +132,15 @@ Oct,11,Water,Norte,32,percent,AAA
 Oct,11,Water,Oeste,45,percent,AAA
 Oct,11,Water,Sur,84,percent,AAA
 Oct,11,Water,Este,68,percent,AAA
+Oct,12,Electricity,Puerto Rico,17,percent,AEE
+Oct,12,Telecomunications,Puerto Rico,55,percent,JRTC
+Oct,12,Water,Puerto Rico,64,percent,AAA
+Oct,12,Water,Metro,82,percent,AAA
+Oct,12,Water,Norte,30,percent,AAA
+Oct,12,Water,Oeste,35,percent,AAA
+Oct,12,Water,Sur,81,percent,AAA
+Oct,12,Water,Este,70,percent,AAA
+Oct,12,Cell towers,Puerto Rico,601,number,JRTC
+Oct,12,People in shelters,Puerto Rico,5602,number,Vivienda
+Oct,12,Hospitals,Puerto Rico,72,number,Departamento de Salud Federal y Local
+Oct,12,Hospitals with electricity,Puerto Rico,43,number,Departamento de Salud Federal y Local
