@@ -167,3 +167,16 @@ Oct,14,Water,Este,67,percent,AAA
 Oct,14,Cell antennas,Puerto Rico,647,number,FCC
 Oct,14,Cell towers,Puerto Rico,652,number,JRTC
 Oct,14,People in shelters,Puerto Rico,5261,number,Vivienda
+Oct,15,Electricity,Puerto Rico,15,percent,AEE
+Oct,15,Telecomunications,Puerto Rico,59,percent,JRTC
+Oct,15,Water,Puerto Rico,69,percent,AAA
+Oct,15,Water,Metro,84,percent,AAA
+Oct,15,Water,Norte,38,percent,AAA
+Oct,15,Water,Oeste,53,percent,AAA
+Oct,15,Water,Sur,87,percent,AAA
+Oct,15,Water,Este,71,percent,AAA
+Oct,15,Cell antennas,Puerto Rico,672,number,FCC
+Oct,15,Cell towers,Puerto Rico,690,number,JRTC
+Oct,15,People in shelters,Puerto Rico,5141,number,Vivienda
+Oct,15,Hospitals,Puerto Rico,69,number,Departamento de Salud Federal y Local
+Oct,15,Hospitals with electricity,Puerto Rico,44,number,Departamento de Salud Federal y Local
