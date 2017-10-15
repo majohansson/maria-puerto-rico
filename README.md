@@ -2,6 +2,11 @@
 
 On September 20, 2017, Hurricane Maria hit Puerto Rico as a Category 4 hurricane ([National Hurricane Center Maps](http://www.nhc.noaa.gov/archive/2017/MARIA_graphics.php)). Here are some data resources related to this storm and its aftermath.
 
+### [Electricity](Electricity.md)
+[Analysis](Electricity.md) of progress on restoring electricity to all of Puerto Rico.
+
+<img alt="Electricity Puerto Rico" src="figs/Electricity.png" width="500" />
+
 ### [Media Coverage](MediaAnalysis.md)
 [Updated analysis](MediaAnalysis.md) of data on media coverage for Harvey, Irma, and Maria. Original analysis by [FiveThirtyEight.com](http://fivethirtyeight.com/): ["The Media Really Has Neglected Puerto Rico"](https://fivethirtyeight.com/features/the-media-really-has-neglected-puerto-rico/).
 
