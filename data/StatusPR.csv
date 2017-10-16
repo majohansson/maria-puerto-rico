@@ -180,3 +180,14 @@ Oct,15,Cell towers,Puerto Rico,690,number,JRTC
 Oct,15,People in shelters,Puerto Rico,5141,number,Vivienda
 Oct,15,Hospitals,Puerto Rico,69,number,Departamento de Salud Federal y Local
 Oct,15,Hospitals with electricity,Puerto Rico,44,number,Departamento de Salud Federal y Local
+Oct,16,Electricity,Puerto Rico,13.7,percent,AEE
+Oct,16,Telecomunications,Puerto Rico,59,percent,JRTC
+Oct,16,Water,Puerto Rico,72,percent,AAA
+Oct,16,Water,Metro,84,percent,AAA
+Oct,16,Water,Norte,45,percent,AAA
+Oct,16,Water,Oeste,63,percent,AAA
+Oct,16,Water,Sur,88,percent,AAA
+Oct,16,Water,Este,70,percent,AAA
+Oct,16,People in shelters,Puerto Rico,5037,number,Vivienda
+Oct,16,Hospitals,Puerto Rico,70,number,Departamento de Salud Federal y Local
+Oct,16,Hospitals with electricity,Puerto Rico,45,number,Departamento de Salud Federal y Local
