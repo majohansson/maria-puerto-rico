@@ -4,7 +4,7 @@ library(data.table)
 library(dplyr)
 library(stringr)
 
-end.date = as.Date('2017-10-03')
+end.date = as.Date('2017-10-15')
 
 ### query
 #https://television.gdeltproject.org/cgi-bin/iatv_ftxtsearch/iatv_ftxtsearch?primary_keyword=%22Hurricane+Maria%22&context_keywords=&filter_network=ALL&filter_timespan=CUSTOM&filter_timespan_custom_start=08%2F01%2F2017&filter_timespan_custom_end=&filter_displayas=PERCENT&filter_combineseparate=COMBINE&filter_outputtype=DISPLAY#searchbox
@@ -12,7 +12,7 @@ end.date = as.Date('2017-10-03')
 # load tv coverage data
 tv.files = list.files('data/television-explorer/')
 tv = data.table()
-for (i in 1:8) {
+for (i in 1:length(tv.files)) {
   tv = fread(paste0('data/television-explorer/', tv.files[i])) %>%
     mutate(
       date = as.Date(str_sub(as.character(Date), 1, 8), '%Y%m%d'),
@@ -41,8 +41,6 @@ irma.landfall = as.Date('2017-09-10')
 irma.col = 'deeppink3'
 maria.landfall = as.Date('2017-09-20')
 maria.col = 'darkblue'
-nate.landfall = as.Date('2017-10-07')
-nate.col = 'darkred'
 
 x.dates = seq(as.Date('2017-08-20'), max(tv$date)+3, by='weeks')
 
@@ -61,24 +59,22 @@ plot.trend(filter(tv, query == 'Harvey') %>% select(date, Combined),
   col=harvey.col)
 lines(rep(harvey.landfall, 2), c(0, 1.1))
 text(harvey.landfall, 1.2, 'Landfall - Texas', cex=0.75, adj=0.4)
-text(as.Date('2017-09-01'), 0.8, col=harvey.col, 
+text(as.Date('2017-09-02'), 1.05, col=harvey.col, 
   '"Hurricane Harvey"', cex=0.75)
 # Irma
 plot.trend(filter(tv, query == 'Irma') %>% select(date, Combined), 
   col=irma.col)
 lines(rep(irma.landfall, 2), c(0, 1.2))
 text(irma.landfall, 1.3, 'Landfall - Florida', cex=0.75)
-text(as.Date('2017-09-04'), 1.05, col=irma.col, 
+text(as.Date('2017-09-18'), 0.95, col=irma.col, 
   '"Hurricane Irma"', cex=0.75)
 # Maria
 plot.trend(filter(tv, query == 'Maria') %>% select(date, Combined), 
   col=maria.col)
 lines(rep(maria.landfall, 2), c(0, 0.65))
 text(maria.landfall, 0.75, 'Landfall - Puerto Rico', cex=0.75)
-text(as.Date('2017-09-27'), 0.4, col=maria.col, 
+text(as.Date('2017-10-01'), 0.4, col=maria.col, 
   '"Hurricane Maria"', cex=0.75)
-# Nate
-
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.5)
 axis(2, at=seq(0, 3, by=0.5), las=1, col='white', 
@@ -104,14 +100,14 @@ plot.trend(filter(tv, query == 'Florida') %>% select(date, Combined),
   col=irma.col)
 lines(rep(irma.landfall, 2), c(0, 1.2))
 text(irma.landfall, 1.3, 'Landfall - Florida', cex=0.75)
-text(as.Date('2017-09-15'), 2.1, col=irma.col, 
+text(as.Date('2017-09-17'), 2.1, col=irma.col, 
   '"Florida"', cex=0.75)
 # Maria
 plot.trend(filter(tv, query == 'Puerto_Rico') %>% select(date, Combined), 
   col=maria.col)
 lines(rep(maria.landfall, 2), c(0, 1.45))
 text(maria.landfall, 1.55, 'Landfall - Puerto Rico', cex=0.75)
-text(as.Date('2017-09-25'), 1.2, col=maria.col, 
+text(as.Date('2017-10-06'), 1.4, col=maria.col, 
   '"Puerto Rico"', cex=0.75)
 # Nate
 
