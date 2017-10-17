@@ -23,7 +23,10 @@ targets = data.table(
 
 ### model expectation on Oct 14
 initial.model <- lm(Value ~ date, filter(elec, date <= ymd('2017-10-14')))
-summary(initial.model)
+#summary(initial.model)
+model.coeff = summary(initial.model)$coefficients['date', c('Estimate', 'Std. Error')]
+model.coeff[1] - qnorm(0.975) * model.coeff[2]
+model.coeff[1] + qnorm(0.975) * model.coeff[2]
 initial.preds = predict.lm(initial.model, 
   newdata=data.table(date=c(min(elec$date), ymd('2017-12-31'))),
   se.fit=T, interval='prediction')$fit %>%

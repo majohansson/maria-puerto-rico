@@ -191,3 +191,15 @@ Oct,16,Water,Este,70,percent,AAA
 Oct,16,People in shelters,Puerto Rico,5037,number,Vivienda
 Oct,16,Hospitals,Puerto Rico,70,number,Departamento de Salud Federal y Local
 Oct,16,Hospitals with electricity,Puerto Rico,45,number,Departamento de Salud Federal y Local
+Oct,17,Electricity,Puerto Rico,17.7,percent,AEE
+Oct,17,Telecomunications,Puerto Rico,59,percent,JRTC
+Oct,17,Water,Puerto Rico,65.43,percent,AAA
+Oct,17,Water,Metro,77,percent,AAA
+Oct,17,Water,Norte,39,percent,AAA
+Oct,17,Water,Oeste,49,percent,AAA
+Oct,17,Water,Sur,80,percent,AAA
+Oct,17,Water,Este,71,percent,AAA
+Oct,17,Cell towers,Puerto Rico,691,number,JRTC
+Oct,17,People in shelters,Puerto Rico,4842,number,Vivienda
+Oct,17,Hospitals,Puerto Rico,70,number,Departamento de Salud Federal y Local
+Oct,17,Hospitals with electricity,Puerto Rico,45,number,Departamento de Salud Federal y Local
