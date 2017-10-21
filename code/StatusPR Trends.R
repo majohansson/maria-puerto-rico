@@ -34,8 +34,11 @@ plot(x.dates, rep(1, length(x.dates)),
 abline(h=seq(0, 12000, by=2000), col=adjustcolor('darkgrey', 0.3))
 abline(v=x.dates, col=adjustcolor('darkgrey', 0.3))
 plot.trend(select(shelter, date, Value), col='darkblue')
-lines(rep(ymd('2017-09-21'), 2), c(0, 8000), lwd=3, col='darkred')
-text(ymd('2017-09-21'), 8000, 'Maria Landfall', cex=0.75, pos=4, col='darkred')
+
+# landfall
+arrows(ymd('2017-09-21'), 8000, ymd('2017-09-21'), 0, length=0.05)
+text(ymd('2017-09-23'), 8300, 'Landfall - Maria', cex=0.75)
+
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 12000, by=2000), las=1, col='white', 
