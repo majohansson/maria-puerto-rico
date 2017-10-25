@@ -4,7 +4,7 @@ library(data.table)
 library(dplyr)
 library(stringr)
 
-end.date = as.Date('2017-10-15')
+end.date = as.Date('2017-10-21')
 
 ### queries
 # hurricanes
@@ -32,6 +32,15 @@ for (i in 1:length(state.files)) {
     bind_rows(states)
 }
 
+states.bkg = states %>%
+  filter(as.Date('2017-07-01') < date & date <= as.Date('2017-07-31')) %>%
+  group_by(state) %>%
+  summarize(july = mean(sentences))
+
+# normalize states
+states = left_join(states, select(states.bkg, state, july)) %>%
+  mutate(add.sent = sentences - july)
+
 # manipulate & filter date
 hurr = mutate(hurr, date = as.Date(date)) %>%
   filter(as.Date('2017-08-20') < date & date <= end.date) %>%
@@ -57,6 +66,7 @@ nate.landfall = as.Date('2017-10-07')
 nate.col = 'darkred'
 
 x.dates = seq(as.Date('2017-08-20'), max(hurr$date)+3, by='weeks')
+y.scale = 12000/5000
 
 plot.mediacloud = function() {
 png('figs/MediaCloud.png', 7, 3, units='in', res=360)
@@ -64,72 +74,82 @@ par(mfrow=c(1, 2), mar=c(2, 2, 0.5, 0.5), oma=c(0, 1.5, 0, 0), cex=0.7)
 
 # hurricanes
 plot(filter(hurr, hurricane == 'Harvey') %>% select(date, sentences),
-  ylim=c(0, 5000), type='n', 
+  ylim=c(0, 12000), type='n', 
   axes=F, xlab='', ylab='')
-abline(h=seq(0, 5000, by=1000), col=adjustcolor('darkgrey', 0.3))
+abline(h=seq(0, 12000, by=2000), col=adjustcolor('darkgrey', 0.3))
 abline(v=x.dates, col=adjustcolor('darkgrey', 0.3))
 # Harvey
 plot.trend(filter(hurr, hurricane == 'Harvey') %>% select(date, sentences), 
   col=harvey.col)
-lines(rep(harvey.landfall, 2), c(0, 1100))
-text(harvey.landfall, 1200, 'Landfall - Texas', cex=0.75, adj=0.4)
-text(as.Date('2017-08-28'), 2700, col=harvey.col, 
+lines(rep(harvey.landfall, 2), c(0, 1100*y.scale))
+text(harvey.landfall, 1200*y.scale, 'Landfall - Texas', cex=0.75, adj=0.4)
+text(as.Date('2017-08-28'), 2700*y.scale, col=harvey.col, 
   '"Hurricane Harvey"', cex=0.75)
 # Irma
 plot.trend(filter(hurr, hurricane == 'Irma') %>% select(date, sentences), 
   col=irma.col)
-lines(rep(irma.landfall, 2), c(0, 1400))
-text(irma.landfall, 1500, 'Landfall - Florida', cex=0.75)
-text(as.Date('2017-09-10'), 3300, col=irma.col, 
+lines(rep(irma.landfall, 2), c(0, 1400*y.scale))
+text(irma.landfall, 1500*y.scale, 'Landfall - Florida', cex=0.75)
+text(as.Date('2017-09-10'), 3300*y.scale, col=irma.col, 
   '"Hurricane Irma"', cex=0.75)
 # Maria
 plot.trend(filter(hurr, hurricane == 'Maria') %>% select(date, sentences), 
   col=maria.col)
-lines(rep(maria.landfall, 2), c(0, 1100))
-text(maria.landfall, 1200, 'Landfall - Puerto Rico', cex=0.75)
-text(as.Date('2017-10-01'), 900, col=maria.col, 
+lines(rep(maria.landfall, 2), c(0, 1100*y.scale))
+text(maria.landfall, 1200*y.scale, 'Landfall - Puerto Rico', cex=0.75)
+text(as.Date('2017-10-01'), 900*y.scale, col=maria.col, 
   '"Hurricane Maria"', cex=0.75)
 # Nate
 
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.5)
-axis(2, at=seq(0, 5000, by=1000), las=1, col='white', 
+axis(2, at=seq(0, 12000, by=2000), las=1, col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.5)
 mtext('Sentences in MediaCloud US Top Online News', 2, line=2.5, col='grey50', cex=0.7)
 mtext('Hurricanes', 3, -2, font=2)
 
 # states
 plot(filter(states, state == 'Texas') %>% select(date, sentences),
-  ylim=c(0, 5000), type='n', 
+  ylim=c(0, 12000), type='n', 
   axes=F, xlab='', ylab='')
-abline(h=seq(0, 5000, by=1000), col=adjustcolor('darkgrey', 0.3))
+abline(h=seq(0, 12000, by=2000), col=adjustcolor('darkgrey', 0.3))
 abline(v=x.dates, col=adjustcolor('darkgrey', 0.3))
 # Harvey
-plot.trend(filter(states, state == 'Texas') %>% select(date, sentences), 
+lines(filter(states, state == 'Texas') %>% select(date, sentences), 
+  col=adjustcolor(harvey.col, 0.5), lwd=0.5)
+plot.trend(filter(states, state == 'Texas') %>% select(date, add.sent), 
   col=harvey.col)
-lines(rep(harvey.landfall, 2), c(0, 1100))
-text(harvey.landfall, 1200, 'Landfall - Texas', cex=0.75, adj=0.4)
-text(as.Date('2017-08-22'), 3100, col=harvey.col, 
+lines(rep(harvey.landfall, 2), c(0, 1100*y.scale))
+text(harvey.landfall, 1200*y.scale, 'Landfall - Texas', cex=0.75, adj=0.4)
+text(as.Date('2017-08-22'), 3600*y.scale, col=harvey.col, 
   '"Texas"', cex=0.75)
 # Irma
-plot.trend(filter(states, state == 'Florida') %>% select(date, sentences), 
+lines(filter(states, state == 'Florida') %>% select(date, sentences), 
+  col=adjustcolor(irma.col, 0.5), lwd=0.5)
+plot.trend(filter(states, state == 'Florida') %>% select(date, add.sent), 
   col=irma.col)
-lines(rep(irma.landfall, 2), c(0, 1600))
-text(irma.landfall, 1700, 'Landfall - Florida', cex=0.75)
-text(as.Date('2017-09-17'), 3500, col=irma.col, 
+lines(rep(irma.landfall, 2), c(0, 1600*y.scale))
+text(irma.landfall, 1700*y.scale, 'Landfall - Florida', cex=0.75)
+text(as.Date('2017-09-16'), 3500*y.scale, col=irma.col, 
   '"Florida"', cex=0.75)
 # Maria
-plot.trend(filter(states, state == 'Puerto Rico') %>% select(date, sentences), 
+lines(filter(states, state == 'Puerto Rico') %>% select(date, sentences), 
+  col=adjustcolor(maria.col, 0.5), lwd=0.5)
+plot.trend(filter(states, state == 'Puerto Rico') %>% select(date, add.sent), 
   col=maria.col)
-lines(rep(maria.landfall, 2), c(0, 1400))
-text(maria.landfall, 1500, 'Landfall - Puerto Rico', cex=0.75)
-text(as.Date('2017-10-02'), 2700, col=maria.col, 
+lines(rep(maria.landfall, 2), c(0, 1900*y.scale))
+text(maria.landfall, 2000*y.scale, 'Landfall - Puerto Rico', cex=0.75)
+text(as.Date('2017-10-04'), 2700*y.scale, col=maria.col, 
   '"Puerto Rico"', cex=0.75)
 # Nate
 
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey50', cex=0.8)
 mtext('States/Territory', 3, -2, font=2)
+legend(as.Date('2017-09-25'), 9800, bty='n',
+  legend=c('Relative volume', 'Increase compared to July'),
+  lty=c(1, 0), lwd=c(0.5, 0), pch=c(NA, 22), col='black',
+  pt.bg=c(NA, 'grey40'), pt.cex=1.5, cex=0.7)
 
 dev.off()
 }
