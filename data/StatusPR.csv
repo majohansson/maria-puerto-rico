@@ -1,7 +1,6 @@
 Month,Day,Resource,Location,Value,Unit,Source
 Sep,29,Electricity,Puerto Rico,5,percent,AEE
 Sep,29,Telecomunications,Puerto Rico,30.5,percent,JRTC
-Sep,29,Cell towers,Puerto Rico,9.7,percent,FCC
 Sep,29,People in shelters,Puerto Rico,11105,number,Vivienda
 Sep,29,Water,Metro,48.75,percent,AAA
 Sep,29,Water,Norte,25.47,percent,AAA
@@ -318,3 +317,16 @@ Oct,26,Cell towers,Puerto Rico,967,number,JRTC
 Oct,26,People in shelters,Puerto Rico,3655,number,Vivienda
 Oct,26,Hospitals,Puerto Rico,65,number,Departamento de Salud Federal y Local
 Oct,26,Hospitals with electricity,Puerto Rico,50,number,Departamento de Salud Federal y Local
+Oct,27,Electricity,Puerto Rico,27.6,percent,AEE
+Oct,27,Telecomunications,Puerto Rico,67,percent,JRTC
+Oct,27,Water,Puerto Rico,77,percent,AAA
+Oct,27,Water,Metro,89,percent,AAA
+Oct,27,Water,Norte,58,percent,AAA
+Oct,27,Water,Oeste,67,percent,AAA
+Oct,27,Water,Sur,89,percent,AAA
+Oct,27,Water,Este,72,percent,AAA
+Oct,27,Cell antennas,Puerto Rico,902,number,FCC
+Oct,27,Cell towers,Puerto Rico,1019,number,JRTC
+Oct,27,People in shelters,Puerto Rico,3577,number,Vivienda
+Oct,27,Hospitals,Puerto Rico,65,number,Departamento de Salud Federal y Local
+Oct,27,Hospitals with electricity,Puerto Rico,54,number,Departamento de Salud Federal y Local
