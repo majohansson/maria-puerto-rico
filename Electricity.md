@@ -1,4 +1,4 @@
-## Re-Energinzing Puerto Rico
+## Re-Energizing Puerto Rico
 
 On October 14, 2017, the government of Puerto Rico announced targets for achieving 95% coverage by 
 [December 15](https://twitter.com/fortalezapr/status/919201514073321472). 
