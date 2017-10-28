@@ -330,3 +330,16 @@ Oct,27,Cell towers,Puerto Rico,1019,number,JRTC
 Oct,27,People in shelters,Puerto Rico,3577,number,Vivienda
 Oct,27,Hospitals,Puerto Rico,65,number,Departamento de Salud Federal y Local
 Oct,27,Hospitals with electricity,Puerto Rico,54,number,Departamento de Salud Federal y Local
+Oct,28,Electricity,Puerto Rico,29.7,percent,AEE
+Oct,28,Telecomunications,Puerto Rico,69,percent,JRTC
+Oct,28,Water,Puerto Rico,80,percent,AAA
+Oct,28,Water,Metro,86,percent,AAA
+Oct,28,Water,Norte,74,percent,AAA
+Oct,28,Water,Oeste,68,percent,AAA
+Oct,28,Water,Sur,88,percent,AAA
+Oct,28,Water,Este,80,percent,AAA
+Oct,28,Cell antennas,Puerto Rico,1075,number,FCC
+Oct,28,Cell towers,Puerto Rico,1081,number,JRTC
+Oct,28,People in shelters,Puerto Rico,3502,number,Vivienda
+Oct,28,Hospitals,Puerto Rico,65,number,Departamento de Salud Federal y Local
+Oct,28,Hospitals with electricity,Puerto Rico,55,number,Departamento de Salud Federal y Local
