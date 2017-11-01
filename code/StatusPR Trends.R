@@ -71,6 +71,12 @@ dev.off()
 plot.hosp()
 
 ### Water
+agua.m = summary(lm(Value ~ date, data=filter(status, 
+  Resource == 'Water', Location == 'Puerto Rico')))
+agua.m$coefficients['date', 'Estimate'] - 
+  qnorm(0.975) * agua.m$coefficients['date', 'Std. Error']
+agua.m$coefficients['date', 'Estimate'] + 
+  qnorm(0.975) * agua.m$coefficients['date', 'Std. Error']
 water.colors = c("#5467d0", "#637b32", "#475a8d", "#bf562c", "#4e5d50", "#9a4447")
 water.alpha = c(rep(1, 0.7), 1)
 water.lwd = c(rep(1, 5), 3)
