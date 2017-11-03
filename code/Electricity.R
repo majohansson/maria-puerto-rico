@@ -4,7 +4,7 @@ library(lubridate)
 library(stringr)
 
 ### dates for plot
-x.dates = seq(ymd('2017-09-21'), ymd('2017-12-31'), by='weeks')
+x.dates = seq(ymd('2017-09-21'), ymd('2018-02-07'), by='weeks')
 
 ### reported data
 elec = fread('data/StatusPR.csv') %>%
@@ -16,8 +16,9 @@ elec = fread('data/StatusPR.csv') %>%
 
 ### targets from Oct 14
 targets = data.table(
-  date = ymd(c('2017-10-30', '2017-11-15', '2017-12-01', '2017-12-15')),
-  target = c(30, 50, 80, 95))
+  date = ymd(c('2017-10-30', '2017-11-15', '2017-12-01', '2017-12-15', '2018-01-31')),
+  target = c(30, 50, 80, 95, 75),
+  col = c(rep('darkred', 4), 'darkorange'))
 
 ### model expectation on Oct 14
 initial.model <- lm(Value ~ date, filter(elec, date <= ymd('2017-10-14')))
@@ -59,16 +60,15 @@ lines(select(initial.preds, date, lwr), col='darkblue', lty=1, lwd=0.5)
 lines(select(initial.preds, date, upr), col='darkblue', lty=1, lwd=0.5)
 
 # targets
-points(targets, col='darkred', pch=19)
+points(targets$date, targets$target, col=targets$col, pch=19)
 text(targets$date, targets$target+8, labels=format(targets$date, '%b %d'), 
-  col='darkred', pch=19, cex=0.7)
+  col=targets$col, pch=19, cex=0.7)
 text(targets$date, targets$target+4, labels=paste0(targets$target, '%'), 
-  col='darkred', pch=19, cex=0.7)
+  col=targets$col, pch=19, cex=0.7)
 
 # landfall
 arrows(ymd('2017-09-21'), 50, ymd('2017-09-21'), 0, length=0.05)
-#lines(rep(ymd('2017-09-21'), 2), c(0, 50), lwd=1)
-text(ymd('2017-09-26'), 53, 'Landfall - Maria', cex=0.75)
+text(ymd('2017-09-27'), 53, 'Landfall - Maria', cex=0.75)
 
 # dressing
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
