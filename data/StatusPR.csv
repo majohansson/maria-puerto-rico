@@ -432,3 +432,16 @@ Nov,4,Cell towers,Puerto Rico,1297,number,JRTC
 Nov,4,People in shelters,Puerto Rico,2844,number,Vivienda
 Nov,4,Hospitals,Puerto Rico,67,number,Departamento de Salud Federal y Local
 Nov,4,Hospitals with electricity,Puerto Rico,58,number,Departamento de Salud Federal y Local
+Nov,5,Electricity,Puerto Rico,41.03,percent,AEE
+Nov,5,Telecomunications,Puerto Rico,71,percent,JRTC
+Nov,5,Water,Puerto Rico,83.09,percent,AAA
+Nov,5,Water,Metro,93,percent,AAA
+Nov,5,Water,Norte,72,percent,AAA
+Nov,5,Water,Oeste,73,percent,AAA
+Nov,5,Water,Sur,89,percent,AAA
+Nov,5,Water,Este,80,percent,AAA
+Nov,5,Cell antennas,Puerto Rico,1328,number,FCC
+Nov,5,Cell towers,Puerto Rico,1261,number,JRTC
+Nov,5,People in shelters,Puerto Rico,2844,number,Vivienda
+Nov,5,Hospitals,Puerto Rico,67,number,Departamento de Salud Federal y Local
+Nov,5,Hospitals with electricity,Puerto Rico,58,number,Departamento de Salud Federal y Local
