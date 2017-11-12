@@ -4,7 +4,7 @@ library(data.table)
 library(dplyr)
 library(stringr)
 
-end.date = as.Date('2017-10-21')
+end.date = as.Date('2017-11-11')
 
 ### query
 #https://television.gdeltproject.org/cgi-bin/iatv_ftxtsearch/iatv_ftxtsearch?primary_keyword=%22Hurricane+Maria%22&context_keywords=&filter_network=ALL&filter_timespan=CUSTOM&filter_timespan_custom_start=08%2F01%2F2017&filter_timespan_custom_end=&filter_displayas=PERCENT&filter_combineseparate=COMBINE&filter_outputtype=DISPLAY#searchbox
@@ -33,7 +33,6 @@ tv.bkg = tv %>%
 # normalize
 tv = left_join(tv, select(tv.bkg, query, july)) %>%
   mutate(add.Combined = Combined - july)
-
 
 # filter date
 tv = filter(tv, as.Date('2017-08-20') < date & date <= end.date) %>%
@@ -130,8 +129,8 @@ text(as.Date('2017-10-06'), 1.4, col=maria.col,
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey50', cex=0.8)
 mtext('States/Territory', 3, -2, font=2)
-legend(as.Date('2017-09-25'), 2.5, bty='n',
-  legend=c('Relative volume', 'Increase compared to July'),
+legend(as.Date('2017-10-10'), 2.5, bty='n',
+  legend=c('Total percent', 'Increase compared to July'),
   lty=c(1, 0), lwd=c(0.5, 0), pch=c(NA, 22), col='black',
   pt.bg=c(NA, 'grey40'), pt.cex=1.5, cex=0.7)
 

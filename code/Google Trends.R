@@ -5,7 +5,7 @@ library(tidyr)
 library(dplyr)
 library(stringr)
 
-end.date = as.Date('2017-10-21')
+end.date = as.Date('2017-11-11')
 
 # query
 # https://trends.google.com/trends/explore?date=2017-07-01%202017-10-22&geo=US&q=Hurricane%20Harvey,Hurricane%20Irma,Hurricane%20Maria
