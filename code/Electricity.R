@@ -75,7 +75,7 @@ axis.Date(1, at=x.dates, format="%b %d", col='white',
   mgp=c(3, 0, 0), col.axis='grey40', cex.axis=0.8)
 axis(2, at=seq(0, 100, by=20), las=1, col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex.axis=0.8)
-mtext('Percent of PR with electricity (status.pr)', 2, line=1.5, col='grey40', cex=0.7)
+mtext('Electricity generation (% from status.pr)', 2, line=1.5, col='grey40', cex=0.7)
 dev.off()
 }
 plot.elec()

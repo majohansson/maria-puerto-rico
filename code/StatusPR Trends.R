@@ -56,14 +56,14 @@ lines(filter(status, Resource == 'Hospitals with electricity') %>%
     select(date, Value), col='darkred', lwd=2)
 lines(filter(status, Resource == 'Hospitals') %>%
     select(date, Value), col='darkblue', lwd=2)
-arrows(ymd('2017-09-21'), 40, ymd('2017-09-21'), 0, length=0.05)
-text(ymd('2017-09-25'), 42, 'Landfall - Maria', cex=0.75)
+arrows(ymd('2017-09-21'), 23, ymd('2017-09-21'), 0, length=0.05)
+text(ymd('2017-09-25'), 25, 'Landfall - Maria', cex=0.75)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 70, by=10), las=1, col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 mtext('Number of hospitals', 2, line=2.5, col='grey40', cex=0.8)
-legend('topleft', bty='n',
+legend('bottomright', bty='n',
   legend=c('Assisted', 'Connected to electric grid'),
   lty=c(1, 1), col=c('darkblue', 'darkred'), cex=0.7)
 dev.off()
@@ -143,14 +143,14 @@ plot(x.dates, rep(1, length(x.dates)),
   axes=F, xlab='', ylab='')
 abline(h=seq(0, 2800, by=500), col=adjustcolor('darkgrey', 0.3))
 abline(v=x.dates, col=adjustcolor('darkgrey', 0.3))
-lines(c(x.dates[1], x.dates[length(x.dates)]), c(2682, 2682), 
+lines(c(x.dates[1], x.dates[length(x.dates)]), c(2712, 2712), 
   col=cell.color[1], lty=3)
-text(x.dates[1], 2682+100, 
-  labels='2,682 total cell antennas in Puerto Rico (source: FCC)', 
+text(x.dates[1], 2712+100, 
+  labels='2,712 total cell antennas in Puerto Rico (source: FCC)', 
   col=cell.color[1], cex=0.8, pos=4, font=3)
-lines(c(x.dates[1], x.dates[length(x.dates)]), c(1619, 1619), 
+lines(c(x.dates[1], x.dates[length(x.dates)]), c(2671, 2671), 
   col=cell.color[2], lty=3)
-text(x.dates[1], 1619+100, labels='1,619 cell towers (source: JRTC)', 
+text(x.dates[1], 2671-125, labels='2,671 cell towers (source: JRTC)', 
   col=cell.color[2], cex=0.8, pos=4, font=3)
 lines(filter(status, Resource == 'Cell antennas') %>%
     select(date, Value), col=adjustcolor(cell.color[2], 0.7), lwd=2)
