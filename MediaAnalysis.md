@@ -1,6 +1,8 @@
 ## Hurricane Media Coverage Updates
 
-Initial media coverage of Hurricanes Harvey and Irma was much higher than coverage of Hurricane Maria (see figures below). Likewise, in the states which Harvey and Irma hit hardest, Texas and Florida, initial coverage related to those states was much higher than for Puerto Rico where Maria has the most significant impact. Generally media coverage of Texas and Florida tends to be higher than Puerto Rico, yet clear increases were evident up to roughly 2 weeks after landfall. For Puerto Rico, coverage never reached the peak intensity of the two states, but there has been sustained reporting as the crisis in Puerto Rico continues. However, even that coverage has substantially decreased despite the slow progress in restoring essential services in Puerto Rico (e.g. [the lack of electricity](Electricity.md)). 
+As of early November, despite some ongoing reporting and the continuing crises in Puerto Rico, media coverage of Puerto Rico and Hurricane Maria had essentially disappeared. Both online media (MediaCloud, below) and television (Television Explorer, below) show that coverage of Puerto Rico was barely above normal. Furthermore, Google search volume for Puerto Rico has also returned to baseline, indicating that even beyond the media there was very little interest in or awareness of what was happening on the island.
+
+Early on after the hurricanes, there was more coverage of Maria in Puerto Rico, though not nearly as much as for Harvey in Texas or Irma in Florida. Generally media coverage of Texas and Florida tends to be higher than Puerto Rico, yet clear increases were evident up to roughly 2 weeks after landfall. For Puerto Rico, coverage never reached the peak intensity of the two states, but reporting was more sustained.
 
 ### Online media coverage from [MediaCloud](https://mediacloud.org/)
 ![MediaCloud US Top Online News](figs/MediaCloud.png)
