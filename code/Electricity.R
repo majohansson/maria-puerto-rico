@@ -16,9 +16,9 @@ elec = fread('data/StatusPR.csv') %>%
 
 ### targets from Oct 14
 targets = data.table(
-  date = ymd(c('2017-10-30', '2017-11-15', '2017-12-01', '2017-12-15', '2018-01-31')),
-  target = c(30, 50, 80, 95, 75),
-  col = c(rep('darkred', 4), 'darkorange'))
+  date = ymd(c('2017-10-30', '2017-11-15', '2017-12-01', '2017-12-15')),#, '2018-01-31')),
+  target = c(30, 50, 80, 95),#, 75),
+  col = c(rep('darkred', 4)))#, 'darkorange'))
 
 ### model expectation on Oct 14
 initial.model <- lm(Value ~ date, filter(elec, date <= ymd('2017-10-14')))
