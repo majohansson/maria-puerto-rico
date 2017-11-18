@@ -4,7 +4,7 @@ library(lubridate)
 library(stringr)
 
 ### dates for plot
-x.dates = seq(ymd('2017-09-21'), ymd('2018-02-07'), by='weeks')
+x.dates = seq(ymd('2017-09-21'), ymd('2018-01-01'), by='weeks')
 
 ### reported data
 elec = fread('data/StatusPR.csv') %>%
