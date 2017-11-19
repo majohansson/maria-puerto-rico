@@ -127,9 +127,9 @@ plot(x.dates, rep(1, length(x.dates)),
 abline(h=seq(0, 100, by=20), col=adjustcolor('darkgrey', 0.3))
 abline(v=x.dates, col=adjustcolor('darkgrey', 0.3))
 plot.trend(filter(status, Resource == 'Telecomunications') %>%
-    select(date, Value), col='darkred')
-arrows(ymd('2017-09-21'), 40, ymd('2017-09-21'), 0, length=0.05)
-text(ymd('2017-09-25'), 44, 'Landfall - Maria', cex=0.75)
+    select(date, Value), col='darkblue')
+arrows(ymd('2017-09-21'), 50, ymd('2017-09-21'), 0, length=0.05)
+text(ymd('2017-09-21'), 54, 'Landfall - Maria', cex=0.75, adj=0.1)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 100, by=20), las=1, col='white', 
@@ -143,21 +143,21 @@ plot(x.dates, rep(1, length(x.dates)),
   axes=F, xlab='', ylab='')
 abline(h=seq(0, 2800, by=500), col=adjustcolor('darkgrey', 0.3))
 abline(v=x.dates, col=adjustcolor('darkgrey', 0.3))
-lines(c(x.dates[1], x.dates[length(x.dates)]), c(2712, 2712), 
-  col=cell.color[1], lty=3)
-text(x.dates[1], 2712+100, 
-  labels='2,712 total cell antennas in Puerto Rico (source: FCC)', 
-  col=cell.color[1], cex=0.8, pos=4, font=3)
+#lines(c(x.dates[1], x.dates[length(x.dates)]), c(2712, 2712), 
+#  col=cell.color[1], lty=3)
+#text(x.dates[1], 2712+100, 
+#  labels='2,712 total cell antennas in Puerto Rico (source: FCC)', 
+#  col=cell.color[1], cex=0.8, pos=4, font=3)
 lines(c(x.dates[1], x.dates[length(x.dates)]), c(2671, 2671), 
   col=cell.color[2], lty=3)
-text(x.dates[1], 2671-125, labels='2,671 cell towers (source: JRTC)', 
+text(x.dates[1], 2671+100, labels='2,671 total cell antennas in Puerto Rico (source: JRTC)', 
   col=cell.color[2], cex=0.8, pos=4, font=3)
 lines(filter(status, Resource == 'Cell antennas') %>%
     select(date, Value), col=adjustcolor(cell.color[2], 0.7), lwd=2)
-lines(filter(status, Resource == 'Cell towers') %>%
-    select(date, Value), col=adjustcolor(cell.color[1], 0.7), lwd=2)
-arrows(ymd('2017-09-21'), 1000, ymd('2017-09-21'), 0, length=0.05)
-text(ymd('2017-09-25'), 1100, 'Landfall - Maria', cex=0.75)
+#lines(filter(status, Resource == 'Cell towers') %>%
+#    select(date, Value), col=adjustcolor(cell.color[1], 0.7), lwd=2)
+arrows(ymd('2017-09-21'), 1200, ymd('2017-09-21'), 0, length=0.05)
+text(ymd('2017-09-21'), 1300, 'Landfall - Maria', cex=0.75, adj=0.1)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 2800, by=500), las=1, col='white', 
