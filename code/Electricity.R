@@ -4,7 +4,7 @@ library(lubridate)
 library(stringr)
 
 ### dates for plot
-x.dates = seq(ymd('2017-09-21'), ymd('2018-01-01'), by='weeks')
+x.dates = seq(ymd('2017-09-20'), ymd('2018-01-01'), by='weeks')
 
 ### reported data
 elec = fread('data/StatusPR.csv') %>%
@@ -67,7 +67,7 @@ text(targets$date, targets$target+4, labels=paste0(targets$target, '%'),
   col=targets$col, pch=19, cex=0.7)
 
 # landfall
-arrows(ymd('2017-09-21'), 50, ymd('2017-09-21'), 0, length=0.05)
+arrows(ymd('2017-09-20'), 50, ymd('2017-09-20'), 0, length=0.05)
 text(ymd('2017-09-27'), 53, 'Landfall - Maria', cex=0.75)
 
 # dressing

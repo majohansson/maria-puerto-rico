@@ -10,7 +10,7 @@ status = fread('data/StatusPR.csv') %>%
   arrange(date)
 dim(status)
 
-x.dates = seq(as.Date('2017-09-21'), max(status$date)+5, by='weeks')
+x.dates = seq(as.Date('2017-09-20'), max(status$date)+5, by='weeks')
 
 ### plot function
 plot.trend = function(dt, col) {
@@ -31,8 +31,8 @@ abline(h=seq(0, 12000, by=2000), col=adjustcolor('darkgrey', 0.3))
 abline(v=x.dates, col=adjustcolor('darkgrey', 0.3))
 plot.trend(filter(status, Resource == 'People in shelters') %>%
     select(date, Value), col='darkblue')
-arrows(ymd('2017-09-21'), 8000, ymd('2017-09-21'), 0, length=0.05)
-text(ymd('2017-09-25'), 8300, 'Landfall - Maria', cex=0.75)
+arrows(ymd('2017-09-20'), 8000, ymd('2017-09-20'), 0, length=0.05)
+text(ymd('2017-09-24'), 8300, 'Landfall - Maria', cex=0.75)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 12000, by=2000), las=1, col='white', 
@@ -56,8 +56,8 @@ lines(filter(status, Resource == 'Hospitals with electricity') %>%
     select(date, Value), col='darkred', lwd=2)
 lines(filter(status, Resource == 'Hospitals') %>%
     select(date, Value), col='darkblue', lwd=2)
-arrows(ymd('2017-09-21'), 23, ymd('2017-09-21'), 0, length=0.05)
-text(ymd('2017-09-25'), 25, 'Landfall - Maria', cex=0.75)
+arrows(ymd('2017-09-20'), 23, ymd('2017-09-20'), 0, length=0.05)
+text(ymd('2017-09-24'), 25, 'Landfall - Maria', cex=0.75)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 70, by=10), las=1, col='white', 
@@ -102,8 +102,8 @@ for (i in 1:6 ) {
       labels=water.locs[i], col=water.colors[i], pos=2, cex=0.9, font=3)
   }
 }
-arrows(ymd('2017-09-21'), 10, ymd('2017-09-21'), 0, length=0.05)
-text(ymd('2017-09-25'), 14, 'Landfall - Maria', cex=0.75)
+arrows(ymd('2017-09-20'), 10, ymd('2017-09-20'), 0, length=0.05)
+text(ymd('2017-09-24'), 14, 'Landfall - Maria', cex=0.75)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 100, by=20), las=1, col='white', 
@@ -128,8 +128,8 @@ abline(h=seq(0, 100, by=20), col=adjustcolor('darkgrey', 0.3))
 abline(v=x.dates, col=adjustcolor('darkgrey', 0.3))
 plot.trend(filter(status, Resource == 'Telecomunications') %>%
     select(date, Value), col='darkblue')
-arrows(ymd('2017-09-21'), 50, ymd('2017-09-21'), 0, length=0.05)
-text(ymd('2017-09-21'), 54, 'Landfall - Maria', cex=0.75, adj=0.1)
+arrows(ymd('2017-09-20'), 50, ymd('2017-09-20'), 0, length=0.05)
+text(ymd('2017-09-20'), 54, 'Landfall - Maria', cex=0.75, adj=0.1)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 100, by=20), las=1, col='white', 
@@ -156,8 +156,8 @@ lines(filter(status, Resource == 'Cell antennas') %>%
     select(date, Value), col=adjustcolor(cell.color[2], 0.7), lwd=2)
 #lines(filter(status, Resource == 'Cell towers') %>%
 #    select(date, Value), col=adjustcolor(cell.color[1], 0.7), lwd=2)
-arrows(ymd('2017-09-21'), 1200, ymd('2017-09-21'), 0, length=0.05)
-text(ymd('2017-09-21'), 1300, 'Landfall - Maria', cex=0.75, adj=0.1)
+arrows(ymd('2017-09-20'), 1200, ymd('2017-09-20'), 0, length=0.05)
+text(ymd('2017-09-20'), 1300, 'Landfall - Maria', cex=0.75, adj=0.1)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 2800, by=500), las=1, col='white', 
