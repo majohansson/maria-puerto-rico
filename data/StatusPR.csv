@@ -632,3 +632,15 @@ Nov,20,Cell antennas,Puerto Rico,1731,number,JRTC
 Nov,20,People in shelters,Puerto Rico,1520,number,Vivienda
 Nov,20,Hospitals,Puerto Rico,67,number,Departamento de Salud Federal y Local
 Nov,20,Hospitals with electricity,Puerto Rico,59,number,Departamento de Salud Federal y Local
+Nov,21,Water,Puerto Rico,88.83,percent,AAA
+Nov,21,Water,Metro,97,percent,AAA
+Nov,21,Water,Norte,85,percent,AAA
+Nov,21,Water,Oeste,87,percent,AAA
+Nov,21,Water,Sur,91,percent,AAA
+Nov,21,Water,Este,80,percent,AAA
+Nov,21,Electricity,Puerto Rico,49.4,percent,AEE
+Nov,21,Telecomunications,Puerto Rico,75,percent,JRTC
+Nov,21,Cell antennas,Puerto Rico,1749,number,JRTC
+Nov,21,People in shelters,Puerto Rico,1472,number,Vivienda
+Nov,21,Hospitals,Puerto Rico,67,number,Departamento de Salud Federal y Local
+Nov,21,Hospitals with electricity,Puerto Rico,59,number,Departamento de Salud Federal y Local
