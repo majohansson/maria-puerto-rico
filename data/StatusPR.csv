@@ -656,3 +656,15 @@ Nov,22,Cell antennas,Puerto Rico,1771,number,JRTC
 Nov,22,People in shelters,Puerto Rico,1385,number,Vivienda
 Nov,22,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 Nov,22,Hospitals with electricity,Puerto Rico,59,number,Departamento de Salud Federal y Local
+Nov,24,Water,Puerto Rico,91.99,percent,AAA
+Nov,24,Water,Metro,98.33,percent,AAA
+Nov,24,Water,Norte,89.57,percent,AAA
+Nov,24,Water,Oeste,88.79,percent,AAA
+Nov,24,Water,Sur,93.57,percent,AAA
+Nov,24,Water,Este,85.44,percent,AAA
+Nov,24,Electricity,Puerto Rico,51.4,percent,AEE
+Nov,24,Telecomunications,Puerto Rico,76,percent,JRTC
+Nov,24,Cell antennas,Puerto Rico,1771,number,JRTC
+Nov,24,People in shelters,Puerto Rico,1237,number,Vivienda
+Nov,24,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Nov,24,Hospitals with electricity,Puerto Rico,59,number,Departamento de Salud Federal y Local
