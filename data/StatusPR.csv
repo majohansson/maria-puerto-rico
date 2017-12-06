@@ -776,3 +776,27 @@ Dec,4,Cell antennas,Puerto Rico,2031,number,JRTC
 Dec,4,People in shelters,Puerto Rico,909,number,Vivienda
 Dec,4,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 Dec,4,Hospitals with electricity,Puerto Rico,62,number,Departamento de Salud Federal y Local
+Dec,5,Water,Puerto Rico,92.45,percent,AAA
+Dec,5,Water,Metro,99,percent,AAA
+Dec,5,Water,Norte,89,percent,AAA
+Dec,5,Water,Oeste,86,percent,AAA
+Dec,5,Water,Sur,94,percent,AAA
+Dec,5,Water,Este,88,percent,AAA
+Dec,5,Electricity,Puerto Rico,68.4,percent,AEE
+Dec,5,Telecomunications,Puerto Rico,84,percent,JRTC
+Dec,5,Cell antennas,Puerto Rico,2045,number,JRTC
+Dec,5,People in shelters,Puerto Rico,872,number,Vivienda
+Dec,5,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Dec,5,Hospitals with electricity,Puerto Rico,62,number,Departamento de Salud Federal y Local
+Dec,6,Water,Puerto Rico,90.57,percent,AAA
+Dec,6,Water,Metro,97,percent,AAA
+Dec,6,Water,Norte,82,percent,AAA
+Dec,6,Water,Oeste,86,percent,AAA
+Dec,6,Water,Sur,95,percent,AAA
+Dec,6,Water,Este,88,percent,AAA
+Dec,6,Electricity,Puerto Rico,68.4,percent,AEE
+Dec,6,Telecomunications,Puerto Rico,85,percent,JRTC
+Dec,6,Cell antennas,Puerto Rico,2065,number,JRTC
+Dec,6,People in shelters,Puerto Rico,834,number,Vivienda
+Dec,6,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Dec,6,Hospitals with electricity,Puerto Rico,62,number,Departamento de Salud Federal y Local
