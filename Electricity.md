@@ -12,8 +12,6 @@ More than three weeks after Maria struck Puerto Rico when these targets were ann
 only 10-15% of the island had electricity, mostly in the metropolitan area where power lines and transfer stations 
 are relatively accessible. Outside of the metropolitan area, the challenge is much greater.
 
-*October 21 Update: One week after announcing the targets, the electric authority reported that 16.6% of Puerto Rico had electricity, fluctuating on a daily basis. While linear progress continues, it is **not** on track to meet the goal of 95% coverage by December 15.*
-
 ### Electricity coverage in Puerto Rico after Hurricane Maria ([StatusPR](http://status.pr/))
 ![PR electricity coverage](figs/Electricity.png)
 
