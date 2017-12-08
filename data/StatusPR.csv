@@ -800,3 +800,15 @@ Dec,6,Cell antennas,Puerto Rico,2065,number,JRTC
 Dec,6,People in shelters,Puerto Rico,834,number,Vivienda
 Dec,6,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 Dec,6,Hospitals with electricity,Puerto Rico,62,number,Departamento de Salud Federal y Local
+Dec,8,Water,Puerto Rico,92.84,percent,AAA
+Dec,8,Water,Metro,99,percent,AAA
+Dec,8,Water,Norte,93,percent,AAA
+Dec,8,Water,Oeste,86,percent,AAA
+Dec,8,Water,Sur,95,percent,AAA
+Dec,8,Water,Este,86,percent,AAA
+Dec,8,Electricity,Puerto Rico,68.4,percent,AEE
+Dec,8,Telecomunications,Puerto Rico,85,percent,JRTC
+Dec,8,Cell antennas,Puerto Rico,2077,number,JRTC
+Dec,8,People in shelters,Puerto Rico,784,number,Vivienda
+Dec,8,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Dec,8,Hospitals with electricity,Puerto Rico,62,number,Departamento de Salud Federal y Local
