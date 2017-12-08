@@ -1,24 +1,22 @@
 ## Status Puerto Rico
 
-This page tracks key indicators of progress in water, communications, hospitals, and shelters during Puerto Rico's recovery from Hurricane Maria. The data here are pulled from the goverment webpage [StatusPR](http://status.pr/). Progress on re-enerigizing the island is shown on the [Re-energinzing Puerto Rico](Electricity.md) page. 
-
-The last update of this page was on October 26, 2017 - 35 days after the hurricane.
+This page tracks key indicators of progress in water, communications, hospitals, and shelters during Puerto Rico's recovery from Hurricane Maria. The data here are pulled from the goverment webpage [StatusPR](http://status.pr/). Progress on re-enerigizing the island is shown on the [Re-energinzing Puerto Rico](Electricity.md) page.
 
 #### Water supply
-Approximately 20% of the clients still had no water and a boil advisory remained in place for all who did.
+Water access was restored to much of the island with a month. Outside of the metropolitan area, however, progress was slower and showed little improvement between mid-November and mid-December. As of the last update of this page, a boil advisory remained in place for all.
 ![Water](figs/Water.png)
 
 #### Communications
-More than 30% of the island still had no wireless or wired telecommunication. Approximately 60% of cellular towers were functioning, but only one third of all cellular antennas.
+Restoration of the telecomunications network was slow but relatively steady. Two months after the hurricane connections had been restored to approximately 75% of Puerto Rico. 
 ![Telecommunications](figs/Telecom.png)
 
 #### Hospitals
-Many hospitals were still running exclusively on generators.
+Hospitals were prioritized for electricity, but progress slowed about a month after Maria.
 ![Hospitals](figs/Hospitals.png)
 
 
 #### Shelters
-While more than half of the people originally in shelters have moved elsewhere, more than 3,500 remained in shelters.
+It's unlcear how many people were initially in shelters. It took about 2 months to reduce the number from over 10,000 to under 1,000.
 ![People in shelters](figs/In_Shelters.png)
 
 
