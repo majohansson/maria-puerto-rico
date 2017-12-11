@@ -825,3 +825,15 @@ Dec,9,People in shelters,Puerto Rico,739,number,Vivienda
 Dec,9,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 Dec,9,Hospitals with electricity,Puerto Rico,63,number,Departamento de Salud Federal y Local
 Dec,10,Electricity,Puerto Rico,56.6,percent,AEE
+Dec,11,Water,Puerto Rico,93.59,percent,AAA
+Dec,11,Water,Metro,99,percent,AAA
+Dec,11,Water,Norte,92,percent,AAA
+Dec,11,Water,Oeste,86,percent,AAA
+Dec,11,Water,Sur,94,percent,AAA
+Dec,11,Water,Este,91,percent,AAA
+Dec,11,Electricity,Puerto Rico,63.7,percent,AEE
+Dec,11,Telecomunications,Puerto Rico,86.5,percent,JRTC
+Dec,11,Cell antennas,Puerto Rico,2150,number,JRTC
+Dec,11,People in shelters,Puerto Rico,737,number,Vivienda
+Dec,11,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Dec,11,Hospitals with electricity,Puerto Rico,63,number,Departamento de Salud Federal y Local
