@@ -911,3 +911,15 @@ Dec,19,Cell antennas,Puerto Rico,2287,number,JRTC
 Dec,19,People in shelters,Puerto Rico,508,number,Vivienda
 Dec,19,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 Dec,19,Hospitals with electricity,Puerto Rico,65,number,Departamento de Salud Federal y Local
+Dec,20,Water,Puerto Rico,86.36,percent,AAA
+Dec,20,Water,Metro,81,percent,AAA
+Dec,20,Water,Norte,82,percent,AAA
+Dec,20,Water,Oeste,87,percent,AAA
+Dec,20,Water,Sur,99,percent,AAA
+Dec,20,Water,Este,89,percent,AAA
+Dec,20,Electricity,Puerto Rico,65.4,percent,AEE
+Dec,20,Telecomunications,Puerto Rico,91,percent,JRTC
+Dec,20,Cell antennas,Puerto Rico,2299,number,JRTC
+Dec,20,People in shelters,Puerto Rico,493,number,Vivienda
+Dec,20,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Dec,20,Hospitals with electricity,Puerto Rico,65,number,Departamento de Salud Federal y Local
