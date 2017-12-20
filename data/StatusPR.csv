@@ -899,3 +899,15 @@ Dec,16,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 Dec,16,Hospitals with electricity,Puerto Rico,65,number,Departamento de Salud Federal y Local
 Dec,17,Electricity,Puerto Rico,68.7,percent,AEE
 Dec,18,Electricity,Puerto Rico,69.8,percent,AEE
+Dec,19,Water,Puerto Rico,92.72,percent,AAA
+Dec,19,Water,Metro,99,percent,AAA
+Dec,19,Water,Norte,85,percent,AAA
+Dec,19,Water,Oeste,88,percent,AAA
+Dec,19,Water,Sur,99,percent,AAA
+Dec,19,Water,Este,87,percent,AAA
+Dec,19,Electricity,Puerto Rico,65.4,percent,AEE
+Dec,19,Telecomunications,Puerto Rico,90,percent,JRTC
+Dec,19,Cell antennas,Puerto Rico,2287,number,JRTC
+Dec,19,People in shelters,Puerto Rico,508,number,Vivienda
+Dec,19,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Dec,19,Hospitals with electricity,Puerto Rico,65,number,Departamento de Salud Federal y Local
