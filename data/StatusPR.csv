@@ -923,3 +923,15 @@ Dec,20,Cell antennas,Puerto Rico,2299,number,JRTC
 Dec,20,People in shelters,Puerto Rico,493,number,Vivienda
 Dec,20,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 Dec,20,Hospitals with electricity,Puerto Rico,65,number,Departamento de Salud Federal y Local
+Dec,21,Water,Puerto Rico,93.33,percent,AAA
+Dec,21,Water,Metro,99,percent,AAA
+Dec,21,Water,Norte,89,percent,AAA
+Dec,21,Water,Oeste,85,percent,AAA
+Dec,21,Water,Sur,99,percent,AAA
+Dec,21,Water,Este,89,percent,AAA
+Dec,21,Electricity,Puerto Rico,65.4,percent,AEE
+Dec,21,Telecomunications,Puerto Rico,92.5,percent,JRTC
+Dec,21,Cell antennas,Puerto Rico,2316,number,JRTC
+Dec,21,People in shelters,Puerto Rico,466,number,Vivienda
+Dec,21,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Dec,21,Hospitals with electricity,Puerto Rico,65,number,Departamento de Salud Federal y Local
