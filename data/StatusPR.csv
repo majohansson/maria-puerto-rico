@@ -959,3 +959,6 @@ Dec,23,Cell antennas,Puerto Rico,2352,number,JRTC
 Dec,23,People in shelters,Puerto Rico,461,number,Vivienda
 Dec,23,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 Dec,23,Hospitals with electricity,Puerto Rico,65,number,Departamento de Salud Federal y Local
+Dec,24,Electricity,Puerto Rico,69.8,percent,AEE
+Dec,24,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Dec,24,Hospitals with electricity,Puerto Rico,66,number,Departamento de Salud Federal y Local
