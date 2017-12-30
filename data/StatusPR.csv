@@ -1004,3 +1004,14 @@ Dec,29,Electricity,Puerto Rico,69.8,percent,AEE
 Dec,29,People in shelters,Puerto Rico,392,number,Vivienda
 Dec,29,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 Dec,29,Hospitals with electricity,Puerto Rico,66,number,Departamento de Salud Federal y Local
+Dec,30,Water,Puerto Rico,95.92,percent,AAA
+Dec,30,Water,Metro,99,percent,AAA
+Dec,30,Water,Norte,95,percent,AAA
+Dec,30,Water,Oeste,99,percent,AAA
+Dec,30,Water,Sur,98,percent,AAA
+Dec,30,Water,Este,96,percent,AAA
+Dec,30,Telecomunications,Puerto Rico,94,percent,JRTC
+Dec,30,Cell antennas,Puerto Rico,2382,number,JRTC
+Dec,30,People in shelters,Puerto Rico,373,number,Vivienda
+Dec,30,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Dec,30,Hospitals with electricity,Puerto Rico,66,number,Departamento de Salud Federal y Local
