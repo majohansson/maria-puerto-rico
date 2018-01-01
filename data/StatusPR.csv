@@ -1015,3 +1015,14 @@ Dec,30,Cell antennas,Puerto Rico,2382,number,JRTC
 Dec,30,People in shelters,Puerto Rico,373,number,Vivienda
 Dec,30,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 Dec,30,Hospitals with electricity,Puerto Rico,66,number,Departamento de Salud Federal y Local
+Dec,31,Water,Puerto Rico,96.27,percent,AAA
+Dec,31,Water,Metro,99,percent,AAA
+Dec,31,Water,Norte,96,percent,AAA
+Dec,31,Water,Oeste,98,percent,AAA
+Dec,31,Water,Sur,98,percent,AAA
+Dec,31,Water,Este,88,percent,AAA
+Dec,31,Electricity,Puerto Rico,69.4,percent,AEE
+Dec,31,Telecomunications,Puerto Rico,95,percent,JRTC
+Dec,31,Cell antennas,Puerto Rico,2392,number,JRTC
+Dec,31,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
+Dec,31,Hospitals with electricity,Puerto Rico,67,number,Departamento de Salud Federal y Local
