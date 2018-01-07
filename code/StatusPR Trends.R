@@ -5,8 +5,7 @@ library(stringr)
 
 status = fread('data/StatusPR.csv') %>%
   mutate(
-    yr = '2017',
-    date=ymd(paste(yr, Month, Day, sep='-'))) %>%
+    date=ymd(paste(Year, Month, Day, sep='-'))) %>%
   arrange(date)
 dim(status)
 
@@ -32,7 +31,7 @@ abline(v=x.dates, col=adjustcolor('darkgrey', 0.3))
 plot.trend(filter(status, Resource == 'People in shelters') %>%
     select(date, Value), col='darkblue')
 arrows(ymd('2017-09-20'), 8000, ymd('2017-09-20'), 0, length=0.05)
-text(ymd('2017-09-24'), 8300, 'Landfall - Maria', cex=0.75)
+text(ymd('2017-09-26'), 8300, 'Landfall - Maria', cex=0.75)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 12000, by=2000), las=1, col='white', 
@@ -57,7 +56,7 @@ lines(filter(status, Resource == 'Hospitals with electricity') %>%
 lines(filter(status, Resource == 'Hospitals') %>%
     select(date, Value), col='darkblue', lwd=2)
 arrows(ymd('2017-09-20'), 23, ymd('2017-09-20'), 0, length=0.05)
-text(ymd('2017-09-24'), 25, 'Landfall - Maria', cex=0.75)
+text(ymd('2017-09-26'), 25, 'Landfall - Maria', cex=0.75)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 70, by=10), las=1, col='white', 
@@ -103,7 +102,7 @@ for (i in 1:6 ) {
   }
 }
 arrows(ymd('2017-09-20'), 10, ymd('2017-09-20'), 0, length=0.05)
-text(ymd('2017-09-24'), 14, 'Landfall - Maria', cex=0.75)
+text(ymd('2017-09-26'), 14, 'Landfall - Maria', cex=0.75)
 axis.Date(1, at=x.dates, format="%b %d", col='white', 
   mgp=c(3, 0, 0), col.axis='grey40', cex=0.8)
 axis(2, at=seq(0, 100, by=20), las=1, col='white', 

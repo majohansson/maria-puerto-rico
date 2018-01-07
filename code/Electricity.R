@@ -4,13 +4,12 @@ library(lubridate)
 library(stringr)
 
 ### dates for plot
-x.dates = seq(ymd('2017-09-20'), ymd('2018-01-01'), by='weeks')
+x.dates = seq(ymd('2017-09-20'), Sys.Date()+7, by='weeks')
 
 ### reported data
 elec = fread('data/StatusPR.csv') %>%
   mutate(
-    yr = '2017',
-    date = ymd(paste(yr, Month, Day, sep='-'))) %>%
+    date = ymd(paste(Year, Month, Day, sep='-'))) %>%
   arrange(date) %>%
   filter(Resource == 'Electricity')
 
@@ -27,10 +26,10 @@ model.coeff = summary(initial.model)$coefficients['date', c('Estimate', 'Std. Er
 model.coeff[1] - qnorm(0.975) * model.coeff[2]
 model.coeff[1] + qnorm(0.975) * model.coeff[2]
 initial.preds = predict.lm(initial.model, 
-  newdata=data.table(date=c(min(elec$date), ymd('2017-12-31'))),
+  newdata=data.table(date=c(min(elec$date), max(x.dates))),
   se.fit=T, interval='prediction')$fit %>%
   as.data.frame() %>%
-  mutate(date = c(min(elec$date), ymd('2017-12-31')))
+  mutate(date = c(min(elec$date), max(x.dates)))
 
 ### plot
 plot.elec = function() {
