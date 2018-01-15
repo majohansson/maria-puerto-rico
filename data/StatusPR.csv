@@ -1039,3 +1039,14 @@ Year,Month,Day,Resource,Location,Value,Unit,Source
 2018,Jan,6,People in shelters,Puerto Rico,298,number,Vivienda
 2018,Jan,4,Hospitals,Puerto Rico,68,number,Departamento de Salud Federal y Local
 2018,Jan,4,Hospitals with electricity,Puerto Rico,67,number,Departamento de Salud Federal y Local
+2018,Jan,13,Water,Puerto Rico,96.21,percent,AAA
+2018,Jan,13,Water,Metro,99.52,percent,AAA
+2018,Jan,13,Water,Norte,87.1,percent,AAA
+2018,Jan,13,Water,Oeste,99.21,percent,AAA
+2018,Jan,13,Water,Sur,98.74,percent,AAA
+2018,Jan,13,Water,Este,94.82,percent,AAA
+2018,Jan,13,Electricity,Puerto Rico,79.6,percent,AEE
+2018,Jan,13,Clients with electricity,Puerto Rico,62.5,percent,AEE
+2018,Jan,13,Telecomunications,Puerto Rico,97.5,percent,JRTC
+2018,Jan,13,Cell antennas,Puerto Rico,2451,number,JRTC
+2018,Jan,11,People in shelters,Puerto Rico,274,number,Vivienda
