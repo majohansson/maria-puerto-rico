@@ -1050,3 +1050,12 @@ Year,Month,Day,Resource,Location,Value,Unit,Source
 2018,Jan,13,Telecomunications,Puerto Rico,97.5,percent,JRTC
 2018,Jan,13,Cell antennas,Puerto Rico,2451,number,JRTC
 2018,Jan,11,People in shelters,Puerto Rico,274,number,Vivienda
+2018,Jan,16,Water,Puerto Rico,92.69,percent,AAA
+2018,Jan,16,Water,Metro,99.9,percent,AAA
+2018,Jan,16,Water,Norte,72.93,percent,AAA
+2018,Jan,16,Water,Oeste,98.74,percent,AAA
+2018,Jan,16,Water,Sur,93.22,percent,AAA
+2018,Jan,16,Water,Este,93.81,percent,AAA
+2018,Jan,20,Electricity,Puerto Rico,84.5,percent,AEE
+2018,Jan,20,Clients with electricity,Puerto Rico,67.1,percent,AEE
+2018,Jan,20,Telecomunications,Puerto Rico,97.5,percent,JRTC
