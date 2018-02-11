@@ -1077,3 +1077,12 @@ Year,Month,Day,Resource,Location,Value,Unit,Source
 2018,Feb,2,Clients with electricity,Puerto Rico,71.29,percent,AEE
 2018,Feb,2,Telecomunications,Puerto Rico,98.5,percent,JRTC
 2018,Feb,2,Cell antennas,Puerto Rico,2487,number,JRTC
+2018,Feb,6,Water,Puerto Rico,98.82,percent,AAA
+2018,Feb,6,Water,Metro,99.91,percent,AAA
+2018,Feb,6,Water,Norte,98.41,percent,AAA
+2018,Feb,6,Water,Oeste,98.24,percent,AAA
+2018,Feb,6,Water,Sur,98.19,percent,AAA
+2018,Feb,6,Water,Este,98.39,percent,AAA
+2018,Feb,9,Electricity,Puerto Rico,83.6,percent,AEE
+2018,Feb,9,Clients with electricity,Puerto Rico,72.98,percent,AEE
+2018,Feb,8,People in shelters,Puerto Rico,65,number,Vivienda
