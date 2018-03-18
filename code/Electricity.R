@@ -67,7 +67,7 @@ text(targets$date, targets$target+4, labels=paste0(targets$target, '%'),
 
 # landfall
 arrows(ymd('2017-09-20'), 50, ymd('2017-09-20'), 0, length=0.05)
-text(ymd('2017-09-27'), 53, 'Landfall - Maria', cex=0.75)
+text(ymd('2017-09-30'), 53, 'Landfall - Maria', cex=0.75)
 
 # dressing
 axis.Date(1, at=x.dates, format="%b %d", col='white', 

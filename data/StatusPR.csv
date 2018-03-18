@@ -1112,3 +1112,14 @@ Year,Month,Day,Resource,Location,Value,Unit,Source
 2018,Mar,9,Water,Este,99.9,percent,AAA
 2018,Mar,9,Electricity,Puerto Rico,92.9,percent,AEE
 2018,Mar,9,Clients with electricity,Puerto Rico,90.68,percent,AEE
+2018,Mar,17,Water,Puerto Rico,98.59,percent,AAA
+2018,Mar,17,Water,Metro,99.97,percent,AAA
+2018,Mar,17,Water,Norte,97.6,percent,AAA
+2018,Mar,17,Water,Oeste,95.18,percent,AAA
+2018,Mar,17,Water,Sur,99.82,percent,AAA
+2018,Mar,17,Water,Este,99.11,percent,AAA
+2018,Mar,17,Electricity,Puerto Rico,90.8,percent,AEE
+2018,Mar,17,Clients with electricity,Puerto Rico,92.93,percent,AEE
+2018,Mar,16,Telecomunications,Puerto Rico,98.5,percent,JRTC
+2018,Mar,16,Cell antennas,Puerto Rico,2503,number,JRTC
+2018,Mar,16,People in shelters,Puerto Rico,0,number,Vivienda
