@@ -67,7 +67,7 @@ legend('bottomright', bty='n',
   lty=c(1, 1), col=c('darkblue', 'darkred'), cex=0.7)
 dev.off()
 }
-plot.hosp()
+#plot.hosp()
 
 ### Water
 agua.m = summary(lm(Value ~ date, data=filter(status, 
