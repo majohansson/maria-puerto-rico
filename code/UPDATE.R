@@ -5,7 +5,10 @@ source('code/StatusPR Trends.R')
 Sys.Date() - as.Date('2017-09-20')
 
 aee_clients = 1413000
-aee_clients * (1 - elec$Value[nrow(elec)] / 100)
+clients <- filter(status, Resource == 'Clients with electricity') %>%
+  arrange(date)
+aee_clients * (1 - clients$Value[nrow(clients)] / 100)
+
 acueductos_clients = 1220996 / 0.9932
 pr_water_prop = status %>%
   filter(Resource == 'Water', Location == 'Puerto Rico') %>%
