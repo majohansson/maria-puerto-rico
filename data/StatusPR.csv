@@ -1192,3 +1192,5 @@ Year,Month,Day,Resource,Location,Value,Unit,Source
 2018,Jun,11,Clients with electricity,Puerto Rico,99.46,percent,AEE
 2018,Jun,19,Electricity,Puerto Rico,95.2,percent,AEE
 2018,Jun,19,Clients with electricity,Puerto Rico,99.7,percent,AEE
+2018,Jul,7,Electricity,Puerto Rico,95.2,percent,AEE
+2018,Jul,7,Clients with electricity,Puerto Rico,98.87,percent,AEE
