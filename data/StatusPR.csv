@@ -1196,3 +1196,10 @@ Year,Month,Day,Resource,Location,Value,Unit,Source
 2018,Jul,7,Clients with electricity,Puerto Rico,98.87,percent,AEE
 2018,Jul,13,Electricity,Puerto Rico,95.2,percent,AEE
 2018,Jul,13,Clients with electricity,Puerto Rico,99.93,percent,AEE
+2018,Aug,7,Water,Puerto Rico,99.38,percent,AAA
+2018,Aug,7,Water,Metro,99.88,percent,AAA
+2018,Aug,7,Water,Norte,98.38,percent,AAA
+2018,Aug,7,Water,Oeste,99.91,percent,AAA
+2018,Aug,7,Water,Sur,100,percent,AAA
+2018,Aug,7,Water,Este,98.58,percent,AAA
+2018,Aug,8,Clients with electricity,Puerto Rico,99.9983,percent,AEE
