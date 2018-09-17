@@ -1203,3 +1203,4 @@ Year,Month,Day,Resource,Location,Value,Unit,Source
 2018,Aug,7,Water,Sur,100,percent,AAA
 2018,Aug,7,Water,Este,98.58,percent,AAA
 2018,Aug,8,Clients with electricity,Puerto Rico,99.9983,percent,AEE
+2018,Aug,15,Clients with electricity,Puerto Rico,100,percent,AEE
